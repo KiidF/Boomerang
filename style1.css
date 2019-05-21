@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(90deg,  #445dfa,#00dfdf);
+}
+
+/* very basic reset */
+
+body,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  make the header
+  our first flex container
+*/
+h2{
+  color: white;
+  text-align: center;;
+  font-size: 45px;
+  padding-top: 50px;
+}
+
+
+header {
+  align-items: center;
+  display: flex;
+  margin: 2em;
+}
+a{
+   display: block; font-size: 10px; color: white; text-decoration: none; border: 2px solid white; border-radius: 200px; padding: 2%; width: 100px; text-align: center; margin: auto; text-transform: uppercase; font-family: 'arial'; letter-spacing: 1px; margin-top: 5%;
+}
+/*
+  as children of header,
+  logo and nav
+  become our flex items
+*/
+
+nav {
+  color: white;
+  
+  /*
+    flex is shorthand for
+    flex-grow,
+    flex-shrink,
+    and flex-basis
+
+    this gives us
+    auto equal width flex items
+    and they are all flexbile ... yay!
+  */
+  
+   float: right;
+    left: 1%;
+    position: relative;
+}
+
+#logo{
+    width: 50px;
+    margin: -8px;
+  text-align: center;;
+  color: white;
+}
+p{
+   text-align: center;;
+   color: white;
+   font-size: 15px;
+   font-family: 'Roboto' sans-serif;
+   padding-top: 20px;
+}
+/*
+  make the nav ul
+  our second flex container
+*/
+
+nav ul {
+  list-style-type: none; 
+  padding: 0px; 
+  margin: 0px;
+  left: 50%;
+  position: relative;
+
+}
+
+/*
+  as children of ul,
+  all list items
+  become flex items
+*/
+
+nav li {
+  
+display: block;
+  float: left;
+  padding: 0px 10px;
+  margin: 0px;
+}
